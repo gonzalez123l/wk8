@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Application</title>
+  <style>
+    .container {
+      background-color: #EAF2FF; /* Adjust the hex color code to your desired light blue hue */
+    }
+
+    .music-section img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Weather Application</h1>
+    <!-- Large Image -->
+    <img src="./images/w.jpg" alt="Large Image" style="width: 100%; max-height: 500px; object-fit: cover;">
+
+    <form class="weather-form">
+      <label for="city-name-input">Enter City Name:</label>
+      <input type="text" id="city-name-input" required>
+      <button type="submit">Get Weather</button>
+    </form>
+
+    <div id="weather-data"></div>
+
+    <!-- Music Section -->
+    <div class="music-section">
+      <img id="fig-1" src="./images/Chainsaw.jpg" alt="Track 1" onclick="getSong('fig-1', event)">
+      <img id="fig-2" src="./images/JJK.jpg" alt="Track 2" onclick="getSong('fig-2', event)">
+      <img id="fig-3" src="./images/TET.jpg" alt="Track 3" onclick="getSong('fig-3', event)">
+      <img id="fig-4" src="/images/KSG.jpg" alt="Track 4" onclick="getSong('fig-4', event)">
+      <img id="fig-5" src="./images/SABA.jpg" alt="Track 5" onclick="getSong('fig-5', event)">
+      <img id="fig-6" src="./images/KOD.jpg" alt="Track 6" onclick="getSong('fig-6', event)">
+    </div>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
